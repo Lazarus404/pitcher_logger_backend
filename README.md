@@ -31,7 +31,7 @@ config :logger,
   backends: [{Logger.Backend.Pitcher, :my_error_log}, :console]
 
 config :logger, :my_error_log,
-  host: "https://mydomain.com/logs",
+  url: "https://mydomain.com/logs",
   method: :put,
   level: :error,
   format: "[$level] $message\n"
