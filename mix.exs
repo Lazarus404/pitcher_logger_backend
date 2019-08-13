@@ -24,6 +24,7 @@ defmodule Pitcher.MixProject do
 
   defp deps(),
     do: [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:httpoison, "~> 1.5"}
     ]
 
@@ -34,7 +35,7 @@ defmodule Pitcher.MixProject do
 
   defp package(),
     do: [
-      files: ["config", "lib", "mix.exs", "README*", "LICENSE*", "CHANGELOG*"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*", "CHANGELOG*"],
       maintainers: ["Jahred Love"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/Lazarus404/pitcher_logger_backend"}
