@@ -22,7 +22,7 @@ def deps do
   [{:pitcher_logger_backend, "~> 0.0.1"}]
 end
 ```
-Then run mix deps.get to install it.
+Then run `mix deps.get` to install it.
 
 ## Configuration
 
